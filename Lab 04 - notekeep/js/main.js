@@ -15,8 +15,8 @@ function saveNotes() {
 }
 
 function displayNotes() {
-    let noteContainer = document.getElementById('note_container');
-    let templateElement = document.getElementById('note_template');
+    let noteContainer = document.querySelector('#note_container');
+    let templateElement = document.querySelector('#note_template');
 
     noteContainer.innerHTML = null
 
@@ -55,7 +55,7 @@ function displayNotes() {
 }
 
 function createNote() {
-    let creator = document.getElementById('note_creator');
+    let creator = document.querySelector('#note_creator');
 
     // Jak mi się będzie chciało to poddać inputy sanityzacji, bo XSS
     let note = {

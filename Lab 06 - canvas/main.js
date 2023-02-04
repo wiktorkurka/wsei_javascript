@@ -1,8 +1,8 @@
 const canvas = document.getElementById("renderArea");
 const ctx = canvas.getContext("2d");
 
-const paramX = document.getElementById("paramX");
-const paramY = document.getElementById("paramY");
+const paramX = document.querySelector("#paramX");
+const paramY = document.querySelector("#paramY");
 
 ctx.canvas.width  = window.innerWidth * 0.8;
 ctx.canvas.height = window.innerHeight * 0.8;
@@ -24,7 +24,7 @@ paramY.addEventListener('change', (event) => {
     Y = target.value;
 });
 
-document.getElementById("startBtn").addEventListener('click', (event) => {
+document.querySelector("#startBtn").addEventListener('click', (event) => {
     if (isStopped) {
         init();
         event.target.value = "Stop"
@@ -36,7 +36,7 @@ document.getElementById("startBtn").addEventListener('click', (event) => {
     isStopped = !isStopped
 })
 
-document.getElementById("resetBtn").addEventListener('click', (event) => {
+document.querySelector("#resetBtn").addEventListener('click', (event) => {
     paramX.value = X = 100;
     paramY.value = Y = 50;
 })

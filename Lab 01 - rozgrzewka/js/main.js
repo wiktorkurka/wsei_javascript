@@ -3,7 +3,7 @@
 window.onload = () => {
     const inputCount = 3;
     const inputArray = document.querySelector('.inputArray');
-    const addInputBtn = document.getElementById('addInputBtn');
+    const addInputBtn = document.querySelector('#addInputBtn');
 
     function drawResultsTable(sum, avg, min, max) {
         let table = document.querySelector('.results');
