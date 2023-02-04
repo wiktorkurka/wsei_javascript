@@ -1,0 +1,10 @@
+.channel-container {
+    width: 100%;
+    height: fit-content;
+}
+
+.channel {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}

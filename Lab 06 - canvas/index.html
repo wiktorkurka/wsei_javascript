@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 06 - canvas</title>
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+
+        label {
+            float: left;
+            margin: 0 10px 0 0;
+        }
+
+        input {
+            width: 50px
+        }
+
+        canvas {
+            width: calc(100% - 2px);
+            height: 90%;
+            border: 1px solid black;
+        }
+
+        #canvasControls {
+            display: flex;
+            width: 100%;
+        }
+
+        .controls {
+            display: flex;
+            flex-wrap: wrap;
+            width: min-content;
+        }
+
+        #canvasControls {
+            display: flex;
+            width: 100%;
+        }
+
+        .controls_param {
+            display: flex;
+            width: fit-content;
+        }
+    </style>
+    <script src="main.js" defer>
+    </script>
+</head>
+
+<body>
+    <canvas id="renderArea">
+
+    </canvas>
+    <div id="canvasControls">
+        <div class="controls">
+            <div class="controls_param">
+                <label for="paramX">X</label>
+                <input type="number" name="X" id="paramX">
+            </div>
+            <div class="controls_param">
+                <label for="paramY">Y</label>
+                <input type="number" name="Y" id="paramY">
+            </div>
+        </div>
+        <div class="controls">
+            <input type="button" name="startBtn" id="startBtn" value="Start">
+            <input type="button" name="" id="resetBtn" value="Reset">
+        </div>
+    </div>
+</body>
+
+</html>
